@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="CSS/style.css" />
+
+    <title>Frontend Mentor | Results summary component</title>
+  </head>
+  <body>
+    <div class="container">
+      <section class="section-1">
+        <h2 class="section__header">Your Result</h2>
+        <div class="section__circle">
+          <p class="section__circle-big">76</p>
+          <p class="section__circle-small">of 100</p>
+        </div>
+        <div class="section__content">
+          <h3 class="section__content-title">Great</h3>
+          <p class="section__content-paragraph">
+            You scroed higher than 65% of the people who have taken these tests
+          </p>
+        </div>
+      </section>
+      <section class="section-2">
+        <h3 class="section__summary">Summary</h3>
+        <div class="section__container">
+          <div class="row">
+            <div class="row__description">
+              <img src="./assets/images/icon-reaction.svg" alt="icon 1" />
+              <h4 class="h4-color" data-color="hsla(0, 100%, 67%)">Reaction</h4>
+            </div>
+            <p><span class="row__score-dark"> 80 </span> / 100</p>
+          </div>
+          <div class="row" style="background-color: #fffbf2">
+            <div class="row__description">
+              <img src="./assets/images/icon-memory.svg" alt="icon 2" />
+              <h4 class="h4-color" data-color="hsla(39, 100%, 56%)">Memory</h4>
+            </div>
+            <p><span class="row__score-dark"> 92 </span> / 100</p>
+          </div>
+          <div class="row" style="background-color: #f2fbfa">
+            <div class="row__description">
+              <img src="./assets/images/icon-verbal.svg" alt="icon 3" />
+              <h4 class="h4-color" data-color="hsla(166, 100%, 37%)">Verbal</h4>
+            </div>
+            <p><span class="row__score-dark"> 61 </span> / 100</p>
+          </div>
+          <div class="row" style="background-color: #f3f3fd">
+            <div class="row__description">
+              <img src="./assets/images/icon-visual.svg" alt="icon 4" />
+              <h4 class="h4-color" data-color="hsla(234, 85%, 45%)">Visual</h4>
+            </div>
+            <p><span class="row__score-dark"> 72 </span> / 100</p>
+          </div>
+        </div>
+        <button class="btn">Continue</button>
+      </section>
+    </div>
+    <script src="JS/script.js"></script>
+  </body>
+</html>

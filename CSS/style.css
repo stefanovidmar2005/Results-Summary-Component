@@ -1,0 +1,240 @@
+:root {
+  font-size: 62.5%;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 1.8rem;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #fbfcff;
+}
+@media (min-width: 850px) {
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (min-width: 850px) {
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80rem;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 15px;
+  }
+}
+
+.section-1 {
+  background: linear-gradient(180deg, hsl(252deg, 100%, 67%), hsl(241deg, 81%, 54%));
+  text-align: center;
+  font-family: "Hanken Grotesk", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  padding: 2rem 3rem;
+  margin-bottom: 2rem;
+}
+@media (min-width: 850px) {
+  .section-1 {
+    margin: 0;
+    width: 50%;
+    border-radius: 0px;
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+  }
+}
+.section-1 .section__header {
+  color: hsl(241deg, 100%, 89%);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.9rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+@media (min-width: 850px) {
+  .section-1 .section__header {
+    font-size: 3rem;
+  }
+}
+.section-1 .section__circle {
+  background: linear-gradient(180deg, hsl(256deg, 72%, 46%), hsla(241deg, 72%, 46%, 0));
+  width: 40%;
+  max-width: 130px;
+  border-radius: 50%;
+  margin-bottom: 2rem;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+@media (min-width: 850px) {
+  .section-1 .section__circle {
+    width: 50%;
+    max-width: 150px;
+  }
+}
+.section-1 .section__circle .section__circle-big {
+  font-weight: 800;
+  color: #fff;
+  font-size: 5rem;
+  margin-top: 2rem;
+}
+@media (min-width: 850px) {
+  .section-1 .section__circle .section__circle-big {
+    font-size: 7rem;
+  }
+}
+.section-1 .section__circle .section__circle-small {
+  color: hsl(241deg, 100%, 89%);
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+.section-1 .section__content {
+  width: 80%;
+}
+.section-1 .section__content .section__content-title {
+  color: #fff;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+@media (min-width: 850px) {
+  .section-1 .section__content .section__content-title {
+    font-size: 3rem;
+    margin-top: 2rem;
+  }
+}
+.section-1 .section__content .section__content-paragraph {
+  color: hsl(241deg, 100%, 89%);
+  font-size: 1.4rem;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+@media (min-width: 850px) {
+  .section-1 .section__content .section__content-paragraph {
+    font-size: 1.9rem;
+  }
+}
+
+.section-2 {
+  padding: 0 4rem;
+  max-width: 60rem;
+  margin: 0 auto;
+  font-family: "Hanken Grotesk", sans-serif;
+  margin-bottom: 2.5rem;
+}
+@media (min-width: 850px) {
+  .section-2 {
+    margin: 0;
+    max-width: unset;
+    width: 50%;
+  }
+}
+.section-2 .section__container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.section-2 .section__summary {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+  font-weight: 700;
+}
+@media (min-width: 850px) {
+  .section-2 .section__summary {
+    font-size: 2.3rem;
+  }
+}
+.section-2 .row {
+  background-color: hsl(6deg, 100%, 98%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  border-radius: 10px;
+}
+.section-2 .row__description {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.section-2 .row__description h4 {
+  font-size: 1.5rem;
+}
+.section-2 .row p {
+  font-size: 1.5rem;
+  color: #9c969f;
+}
+@media (min-width: 850px) {
+  .section-2 .row p {
+    font-size: 1.8rem;
+  }
+}
+.section-2 .row__score-dark {
+  color: hsl(224deg, 30%, 27%);
+  font-weight: 800;
+}
+.section-2 .btn {
+  background-color: hsl(224deg, 30%, 27%);
+  border: 0;
+  width: 100%;
+  margin-top: 2rem;
+  padding: 1.45rem;
+  border-radius: 20px;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+@media (min-width: 850px) {
+  .section-2 .btn {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+  }
+}
+.section-2 .btn:hover {
+  opacity: 0.9;
+}
+
+/*# sourceMappingURL=style.css.map */

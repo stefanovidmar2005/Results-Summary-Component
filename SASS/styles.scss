@@ -1,0 +1,221 @@
+@import "variables.scss";
+@import "mixin.scss";
+:root {
+  font-size: 62.5%;
+}
+html {
+  box-sizing: border-box;
+  font-size: 1.8rem;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  background-color: #fbfcff;
+  @include desktop() {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+}
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+// Container Styles
+.container {
+  @include desktop() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80rem;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 15px;
+  }
+}
+
+.section-1 {
+  background: linear-gradient(180deg, $Light-slate-blue, $Light-royal-blue);
+  text-align: center;
+  font-family: $font-family;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  padding: 2rem 3rem;
+  margin-bottom: 2rem;
+  @include desktop() {
+    margin: 0;
+    width: 50%;
+    border-radius: 0px;
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+  }
+  .section__header {
+    color: $Light-lavender;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.9rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    @include desktop() {
+      font-size: 3rem;
+    }
+  }
+  .section__circle {
+    background: linear-gradient(
+      180deg,
+      hsla(256, 72%, 46%, 1),
+      hsla(241, 72%, 46%, 0)
+    );
+    width: 40%;
+    max-width: 130px;
+    border-radius: 50%;
+    margin-bottom: 2rem;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    @include desktop() {
+      width: 50%;
+      max-width: 150px;
+    }
+
+    .section__circle-big {
+      font-weight: 800;
+      color: #fff;
+      font-size: 5rem;
+      margin-top: 2rem;
+      @include desktop() {
+        font-size: 7rem;
+      }
+    }
+    .section__circle-small {
+      color: $Light-lavender;
+      font-size: 1.8rem;
+      margin-bottom: 2rem;
+    }
+  }
+  .section__content {
+    width: 80%;
+    .section__content-title {
+      color: #fff;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      font-weight: 700;
+      @include desktop() {
+        font-size: 3rem;
+        margin-top: 2rem;
+      }
+    }
+    .section__content-paragraph {
+      color: $Light-lavender;
+      font-size: 1.4rem;
+      line-height: 1.5;
+      margin-bottom: 1.5rem;
+      @include desktop() {
+        font-size: 1.9rem;
+      }
+    }
+  }
+}
+
+.section-2 {
+  padding: 0 4rem;
+  max-width: 60rem;
+  margin: 0 auto;
+  font-family: $font-family;
+  margin-bottom: 2.5rem;
+  @include desktop() {
+    margin: 0;
+    max-width: unset;
+    width: 50%;
+  }
+  .section__container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .section__summary {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    font-weight: 700;
+    @include desktop() {
+      font-size: 2.3rem;
+    }
+  }
+  .row {
+    background-color: hsl(6, 100%, 98%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    border-radius: 10px;
+    &__description {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      h4 {
+        font-size: 1.5rem;
+      }
+    }
+    p {
+      font-size: 1.5rem;
+      color: #9c969f;
+      @include desktop() {
+        font-size: 1.8rem;
+      }
+    }
+    &__score-dark {
+      color: $Dark-gray-blue;
+      font-weight: 800;
+    }
+  }
+  .btn {
+    background-color: $Dark-gray-blue;
+    border: 0;
+    width: 100%;
+    margin-top: 2rem;
+    padding: 1.45rem;
+    border-radius: 20px;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    @include desktop() {
+      margin-top: 3rem;
+      margin-bottom: 2rem;
+    }
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+}
